@@ -163,6 +163,11 @@ func azure functionapp publish $FUNCTION_APP
 ## Test in Azure
 
 ```bash
+Content-Type: application/json
+{"name": "Ram"}
+```
+
+```bash
 curl "https://$FUNCTION_APP.azurewebsites.net/api/hello?name=Ram"
 ```
 
